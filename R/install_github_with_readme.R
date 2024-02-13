@@ -5,7 +5,7 @@
 #' @inheritParams remotes::install_github
 #' @inheritParams remotes::install_deps
 #' @details
-#' The code is basically based on [remotes::install_github()].
+#' The code is basically based on [remotes::install_github()], that `remotes` version 2.4.2.
 #' It just intersperses the process of making `README.md` into vignettes if there are no vignettes when the package source is extracted during the installation.
 #'
 #' The `remotes` package on which this code is based was created by the author of `remotes` and is now released at MIT.

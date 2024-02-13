@@ -99,7 +99,7 @@ since the previous install.}
 The bulk of the code is based on \code{\link[remotes:install_github]{remotes::install_github()}}, for packages without vignette, convert \code{README.md} to vignette and install.
 }
 \details{
-The code is basically based on \code{\link[remotes:install_github]{remotes::install_github()}}.
+The code is basically based on \code{\link[remotes:install_github]{remotes::install_github()}}, that \code{remotes} version 2.4.2.
 It just intersperses the process of making \code{README.md} into vignettes if there are no vignettes when the package source is extracted during the installation.
 
 The \code{remotes} package on which this code is based was created by the author of \code{remotes} and is now released at MIT.

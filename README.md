@@ -10,8 +10,8 @@ The goal of `readme2vignette` is to attempt to install a package
 directly from GitHub with convert `README.md` to Vignette during Package
 installation.
 
-Based on `remotes::install_github()`, for packages without vignette,
-convert `README.md` to vignette and install.
+Based on `remotes::install_github()` that `remotes` version 2.4.2., for
+packages without vignette, convert `README.md` to vignette and install.
 
 ## Installation
 
