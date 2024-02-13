@@ -49,7 +49,7 @@ author of `remotes` and is now released at MIT.
 
 The author of the remotes package is currently listed as Developed by
 Gábor Csárdi, Jim Hester, Hadley Wickham, Winston Chang, Martin Morgan,
-Dan Tenenbaum, Posit Software, PBC. Posit Software, PBC.
+Dan Tenenbaum, Posit Software, PBC.
 
 See [r-lib/remote](https://github.com/r-lib/remotes) for detailed
 authorship.

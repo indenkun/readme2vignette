@@ -103,7 +103,7 @@ The code is basically based on \code{\link[remotes:install_github]{remotes::inst
 It just intersperses the process of making \code{README.md} into vignettes if there are no vignettes when the package source is extracted during the installation.
 
 The \code{remotes} package on which this code is based was created by the author of \code{remotes} and is now released at MIT.
-The author of the remotes package is currently listed as Developed by Gábor Csárdi, Jim Hester, Hadley Wickham, Winston Chang, Martin Morgan, Dan Tenenbaum, Posit Software, PBC. Posit Software, PBC.
+The author of the remotes package is currently listed as Developed by Gábor Csárdi, Jim Hester, Hadley Wickham, Winston Chang, Martin Morgan, Dan Tenenbaum, Posit Software, PBC.
 See \href{https://github.com/r-lib/remotes}{r-lib/remote} for detailed authorship.
 }
 \note{
