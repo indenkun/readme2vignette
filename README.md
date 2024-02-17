@@ -10,8 +10,8 @@ The goal of `readme2vignette` is to attempt to install a package
 directly from GitHub with convert `README.md` to Vignette during Package
 installation.
 
-Based on `remotes::install_github()` that `remotes` version 2.4.2., for
-packages without vignette, convert `README.md` to vignette and install.
+Based on `remotes::install_github()` and `remotes::install_cran()` that
+`remotes` version 2.4.2.
 
 ## Installation
 
@@ -23,6 +23,31 @@ remotes::install_github("indenkun/readme2vignette")
 ```
 
 ## Example
+
+### `install_cran_with_readme()`
+
+The basic usage is the same as `remotes::install_cran()`.
+
+If you try to install a package with README.md but no vignette from CRAN
+Repository using `readme2vignette::install_cran_with_readme()`, by
+default the argument `readme_to_vignette` is TRUE and the contents of
+`README.md` becomes a vignette called README.
+
+Installation from binary packages is not supported. Installation must
+always be done from the sourceco package.
+
+``` r
+readme2vignette::install_github_with_readme("MissMech")
+```
+
+Therefore, the contents of `README.md` can be referenced in the local
+environment by `vignette("README", package = "packagename")`.
+
+``` r
+vignette("README", package = "MissMech")
+```
+
+### `install_github_with_reademe()`
 
 The basic usage is the same as `remotes::install_github()`.
 

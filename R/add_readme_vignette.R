@@ -6,6 +6,11 @@
 #' @param vignette_slug String. filename to be used as the vignette. By default this will be README.
 #' @details
 #' Review the DISCRIPTION file and file structure and add the necessary dependencies and files.
+#' @examples
+#' \dontrun{
+#' # In the package directory.
+#' add_readme_to_vignette(".")
+#' }
 #' @export
 add_readme_to_vignette <- function(source, vignette_title = NULL, vignette_slug = "README"){
   desc_file <- desc::desc(file = fs::path(source, "DESCRIPTION"))
