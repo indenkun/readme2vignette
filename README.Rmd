@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of `readme2vignette` is to attempt to install a package directly from GitHub with convert `README.md` to Vignette during Package installation. 
+The goal of `readme2vignette` is to attempt to install a package directly GitHub or CRAN with convert `README.md` to Vignette during Package installation. 
 
 Based on `remotes::install_github()` and `remotes::install_cran()` that `remotes` version 2.4.2. 
 
