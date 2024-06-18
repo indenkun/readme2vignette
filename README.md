@@ -97,8 +97,3 @@ MIT
 - `rmarkdown`
 - `usethis`
 - `utils`
-
-## Notice
-
-- The email address listed in the DESCRIPTION is a dummy. If you have
-  any questions, please post them on ISSUE.

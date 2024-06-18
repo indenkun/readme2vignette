@@ -6,6 +6,8 @@ Authors@R: person("Mao", "Kobayashi", email = "kobamao.jp@gmail.com",
                   role = c("aut", "cre"))
 Description: Convert `README.md` to vignettes when installing packages without vignettes.
 License: MIT + file LICENSE
+URL: https://github.com/indenkun/readme2vignette
+BugReports: https://github.com/indenkun/readme2vignette/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
