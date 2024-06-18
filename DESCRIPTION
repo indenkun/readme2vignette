@@ -1,9 +1,9 @@
 Package: readme2vignette
 Type: Package
 Title: Convert README to Vignette during Package installation
-Version: 0.0.0.9000
-Author: indenkun
-Maintainer: indenkun <bolg@indenkun.hatenabolg.com>
+Version: 0.1.0
+Authors@R: person("Mao", "Kobayashi", email = "kobamao.jp@gmail.com",
+                  role = c("aut", "cre"))
 Description: Convert `README.md` to vignettes when installing packages without vignettes.
 License: MIT + file LICENSE
 Encoding: UTF-8

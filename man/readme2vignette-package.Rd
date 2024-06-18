@@ -8,4 +8,8 @@
 \description{
 Convert `README.md` to vignettes when installing packages without vignettes.
 }
+\author{
+\strong{Maintainer}: Mao Kobayashi \email{kobamao.jp@gmail.com}
+
+}
 \keyword{internal}
