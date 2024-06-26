@@ -15,6 +15,13 @@ Based on `remotes::install_github()` and `remotes::install_cran()` that
 
 ## Installation
 
+You can install the released version of `readme2vignette` from CRAN
+with:
+
+``` r
+install.packages("readme2vignette")
+```
+
 You can install the development version of `readme2vignette` like so:
 
 ``` r

@@ -1,1 +1,3 @@
-# readme2vignette 0.0.0.9000
+# readme2vignette 0.1.0
+
+* Initial CRAN release.
