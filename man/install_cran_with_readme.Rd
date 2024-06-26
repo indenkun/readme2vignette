@@ -89,7 +89,7 @@ Binary format is not supported. The package must be installed from the source pa
 Under the current specification, the images in the \code{README.md} are copied for the figures in the directories under \verb{man/figures/}, but not for the images in other directories, which are missing.
 }
 \examples{
-\donttest{
+\dontrun{
 install_cran_with_readme("arabic2kansuji")
 }
 }

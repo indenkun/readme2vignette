@@ -25,7 +25,7 @@
 #' [https://remotes.r-lib.org/](https://remotes.r-lib.org/)
 #' @family package installation
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' install_github_with_readme("indenkun/MissMech")
 #' }
 #' @export

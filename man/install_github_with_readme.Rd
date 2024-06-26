@@ -113,7 +113,7 @@ See \href{https://github.com/r-lib/remotes}{r-lib/remote} for detailed authorshi
 Under the current specification, the images in the \code{README.md} are copied for the figures in the directories under \verb{man/figures/}, but not for the images in other directories, which are missing.
 }
 \examples{
-\donttest{
+\dontrun{
 install_github_with_readme("indenkun/MissMech")
 }
 }

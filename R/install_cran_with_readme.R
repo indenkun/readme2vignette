@@ -29,7 +29,7 @@
 #' [https://remotes.r-lib.org/](https://remotes.r-lib.org/)
 #' @family package installation
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' install_cran_with_readme("arabic2kansuji")
 #' }
 #' @export
