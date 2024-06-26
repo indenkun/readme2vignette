@@ -4,15 +4,20 @@
 #' @param source String. The directory path where the package is deployed.
 #' @param vignette_title String. The intended title of the vignette. If not provided, no title will be attached.
 #' @param vignette_slug String. filename to be used as the vignette. By default this will be README.
+#'
 #' @details
 #' Review the DISCRIPTION file and file structure and add the necessary dependencies and files.
+#'
+#' @returns
+#' Invisible `NULL`.
+#'
 #' @examples
 #' \dontrun{
 #' # In the package directory.
 #' add_readme_to_vignette(".")
 #' }
 #' @export
-add_readme_to_vignette <- function(source, vignette_title = NULL, vignette_slug = "README"){
+add_readme_to_vignette <- function(source = ".", vignette_title = NULL, vignette_slug = "README"){
   desc_file <- desc::desc(file = fs::path(source, "DESCRIPTION"))
 
   if(fs::file_exists(fs::path(source, "README.md")) &&

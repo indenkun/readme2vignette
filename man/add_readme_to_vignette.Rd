@@ -4,7 +4,11 @@
 \alias{add_readme_to_vignette}
 \title{Add README to vignette}
 \usage{
-add_readme_to_vignette(source, vignette_title = NULL, vignette_slug = "README")
+add_readme_to_vignette(
+  source = ".",
+  vignette_title = NULL,
+  vignette_slug = "README"
+)
 }
 \arguments{
 \item{source}{String. The directory path where the package is deployed.}
@@ -12,6 +16,9 @@ add_readme_to_vignette(source, vignette_title = NULL, vignette_slug = "README")
 \item{vignette_title}{String. The intended title of the vignette. If not provided, no title will be attached.}
 
 \item{vignette_slug}{String. filename to be used as the vignette. By default this will be README.}
+}
+\value{
+Invisible \code{NULL}.
 }
 \description{
 If a package does not have a vignette but has a \code{README.md}, make the contents of the \code{README.md} be the vignette

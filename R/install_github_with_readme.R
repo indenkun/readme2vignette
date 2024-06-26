@@ -10,6 +10,10 @@
 #' The `remotes` package on which this code is based was created by the author of `remotes` and is now released at MIT.
 #' The author of the remotes package is currently listed as Developed by Gábor Csárdi, Jim Hester, Hadley Wickham, Winston Chang, Martin Morgan, Dan Tenenbaum, Posit Software, PBC.
 #' See [r-lib/remote](https://github.com/r-lib/remotes) for detailed authorship.
+#'
+#' @returns
+#' Invisible `NULL`.
+#'
 #' @note
 #' Under the current specification, the images in the `README.md` are copied for the figures in the directories under `man/figures/`, but not for the images in other directories, which are missing.
 #'
@@ -21,7 +25,7 @@
 #' [https://remotes.r-lib.org/](https://remotes.r-lib.org/)
 #' @family package installation
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' install_github_with_readme("indenkun/MissMech")
 #' }
 #' @export

@@ -4,9 +4,17 @@
 \name{readme2vignette-package}
 \alias{readme2vignette}
 \alias{readme2vignette-package}
-\title{readme2vignette: Convert README to Vignette during Package installation}
+\title{readme2vignette: Convert README to Vignette During Package Installation}
 \description{
 Convert `README.md` to vignettes when installing packages without vignettes.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/indenkun/readme2vignette}
+  \item Report bugs at \url{https://github.com/indenkun/readme2vignette/issues}
+}
+
 }
 \author{
 \strong{Maintainer}: Mao Kobayashi \email{kobamao.jp@gmail.com}

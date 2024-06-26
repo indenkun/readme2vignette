@@ -12,6 +12,10 @@
 #' The `remotes` package on which this code is based was created by the author of `remotes` and is now released at MIT.
 #' The author of the remotes package is currently listed as Developed by Gábor Csárdi, Jim Hester, Hadley Wickham, Winston Chang, Martin Morgan, Dan Tenenbaum, Posit Software, PBC.
 #' See [r-lib/remote](https://github.com/r-lib/remotes) for detailed authorship.
+#'
+#' @returns
+#' Invisible `NULL`.
+#'
 #' @note
 #' Binary format is not supported. The package must be installed from the source package.
 #'
@@ -25,7 +29,7 @@
 #' [https://remotes.r-lib.org/](https://remotes.r-lib.org/)
 #' @family package installation
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' install_cran_with_readme("arabic2kansuji")
 #' }
 #' @export

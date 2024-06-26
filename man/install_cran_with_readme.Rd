@@ -69,6 +69,9 @@ since the previous install.}
 
 \item{...}{Other arguments passed on to \code{\link[utils:install.packages]{utils::install.packages()}}.}
 }
+\value{
+Invisible \code{NULL}.
+}
 \description{
 The bulk of the code is based on \code{\link[remotes:install_cran]{remotes::install_cran()}}, for packages without vignette, convert \code{README.md} to vignette and install.
 }
@@ -86,7 +89,7 @@ Binary format is not supported. The package must be installed from the source pa
 Under the current specification, the images in the \code{README.md} are copied for the figures in the directories under \verb{man/figures/}, but not for the images in other directories, which are missing.
 }
 \examples{
-\dontrun{
+\donttest{
 install_cran_with_readme("arabic2kansuji")
 }
 }

@@ -95,6 +95,9 @@ since the previous install.}
 
 \item{...}{Other arguments passed on to \code{\link[utils:install.packages]{utils::install.packages()}}.}
 }
+\value{
+Invisible \code{NULL}.
+}
 \description{
 The bulk of the code is based on \code{\link[remotes:install_github]{remotes::install_github()}}, for packages without vignette, convert \code{README.md} to vignette and install.
 }
@@ -110,7 +113,7 @@ See \href{https://github.com/r-lib/remotes}{r-lib/remote} for detailed authorshi
 Under the current specification, the images in the \code{README.md} are copied for the figures in the directories under \verb{man/figures/}, but not for the images in other directories, which are missing.
 }
 \examples{
-\dontrun{
+\donttest{
 install_github_with_readme("indenkun/MissMech")
 }
 }
