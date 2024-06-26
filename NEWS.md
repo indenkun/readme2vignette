@@ -1,3 +1,1 @@
-# readme2vignette 0.1.0
-
-* Initial CRAN submission.
+# readme2vignette 0.0.0.9000
