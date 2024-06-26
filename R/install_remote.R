@@ -75,7 +75,7 @@ install_remote <- function(remote,
   source <- source_pkg(bundle, subdir = remote$subdir)
   on.exit(unlink(source, recursive = TRUE), add = TRUE)
   if(readme_to_vignette){
-    add_readme_to_vignette(source)
+    add_readme_to_vignette(source, quiet = TRUE)
   }
   if(!inherits(remote, "cran_remote")){
     update_submodules(source, remote$subdir, quiet)

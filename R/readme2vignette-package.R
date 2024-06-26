@@ -22,3 +22,7 @@ update_submodules <- utils::getFromNamespace("update_submodules", "remotes")
 clear_description_md5 <- utils::getFromNamespace("clear_description_md5", "remotes")
 install <- utils::getFromNamespace("install", "remotes")
 install_packages <- utils::getFromNamespace("install_packages", "remotes")
+
+#'
+check_vignette_name <- utils::getFromNamespace("check_vignette_name", "usethis")
+render_template <- utils::getFromNamespace("render_template", "usethis")

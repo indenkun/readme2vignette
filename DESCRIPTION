@@ -14,9 +14,11 @@ RoxygenNote: 7.3.1
 Imports: 
     desc,
     fs,
+    glue,
     knitr,
     pkgbuild,
     remotes,
     rmarkdown,
     usethis,
-    utils
+    utils,
+    whisker

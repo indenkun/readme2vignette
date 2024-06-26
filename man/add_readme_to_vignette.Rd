@@ -5,9 +5,11 @@
 \title{Add README to vignette}
 \usage{
 add_readme_to_vignette(
-  source = ".",
+  source,
   vignette_title = NULL,
-  vignette_slug = "README"
+  braced_vignette_title = "README",
+  vignette_slug = "README",
+  quiet = FALSE
 )
 }
 \arguments{
@@ -15,7 +17,11 @@ add_readme_to_vignette(
 
 \item{vignette_title}{String. The intended title of the vignette. If not provided, no title will be attached.}
 
+\item{braced_vignette_title}{String. The title of the vignette.}
+
 \item{vignette_slug}{String. filename to be used as the vignette. By default this will be README.}
+
+\item{quiet}{Logical. Whether to message about what is happening.}
 }
 \value{
 Invisible \code{NULL}.

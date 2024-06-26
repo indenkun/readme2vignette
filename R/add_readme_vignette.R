@@ -3,7 +3,9 @@
 #' If a package does not have a vignette but has a `README.md`, make the contents of the `README.md` be the vignette
 #' @param source String. The directory path where the package is deployed.
 #' @param vignette_title String. The intended title of the vignette. If not provided, no title will be attached.
+#' @param braced_vignette_title String. The title of the vignette.
 #' @param vignette_slug String. filename to be used as the vignette. By default this will be README.
+#' @param quiet Logical. Whether to message about what is happening.
 #'
 #' @details
 #' Review the DISCRIPTION file and file structure and add the necessary dependencies and files.
@@ -17,7 +19,12 @@
 #' add_readme_to_vignette(".")
 #' }
 #' @export
-add_readme_to_vignette <- function(source = ".", vignette_title = NULL, vignette_slug = "README"){
+add_readme_to_vignette <- function(source, vignette_title = NULL,
+                                   braced_vignette_title = "README",
+                                   vignette_slug = "README",
+                                   quiet = FALSE){
+  check_vignette_name(vignette_slug)
+
   desc_file <- desc::desc(file = fs::path(source, "DESCRIPTION"))
 
   if(fs::file_exists(fs::path(source, "README.md")) &&
@@ -35,34 +42,15 @@ add_readme_to_vignette <- function(source = ".", vignette_title = NULL, vignette
       desc_file$write()
     }
 
-    readme_vignette <- paste0('---
-title: "', vignette_title, '"
-output: rmarkdown::html_vignette
-vignette: >
-  %\\VignetteIndexEntry{README}
-  %\\VignetteEngine{knitr::rmarkdown}
-  %\\VignetteEncoding{UTF-8}
----
+    fs::dir_create(fs::path(source, "vignettes"))
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>")
-if(dir.exists("../man/figures/")){
-  dir.create("./man/figures/", recursive = TRUE)
-  file.copy("../man/figures/", "./man/", recursive = TRUE)
-}
-```
-<!-- This vignette was automatically created from README.md -->
-
-```{r child = "../README.md"}
-```
-  ')
-
-  fs::dir_create(fs::path(source, "vignettes"))
-
-  usethis::write_over(fs::path(source, "vignettes", vignette_slug, ext = "Rmd"),
-                      readme_vignette,
-                      quiet = TRUE)
+    readme_vignette <- render_template("readme2vignette-template.Rmd",
+                                       data = list(vignette_title = vignette_title,
+                                                   braced_vignette_title = glue::glue("{{{braced_vignette_title}}}")),
+                                       package = "readme2vignette")
+    usethis::write_over(path = fs::path(source, "vignettes", vignette_slug, ext = "Rmd"),
+                        readme_vignette,
+                        quiet = quiet)
   }
+  invisible()
 }

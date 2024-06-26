@@ -1,0 +1,24 @@
+---
+title: "{{{ vignette_title }}}"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{{{ braced_vignette_title }}}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+if(dir.exists("../man/figures/")){
+  dir.create("./man/figures/", recursive = TRUE)
+  file.copy("../man/figures/", "./man/", recursive = TRUE)
+}
+```
+
+<!-- This vignette was automatically created from README.md -->
+
+```{r child = "../README.md"}
+```
